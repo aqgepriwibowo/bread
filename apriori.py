@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from mlxtend.frequent_patterns import association_rules, apriori
 
-df = pd.read_csv('bread basket.csv')
+df = pd.read_csv('bread_basket.csv')
 df['date_time'] = pd.to_datetime(df['date_time'], format='%d-%m-%Y %H:%M')
 
 df['month'] = df['date_time'].dt.month
